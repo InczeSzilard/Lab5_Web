@@ -67,14 +67,14 @@
             // newProductToolStripMenuItem
             // 
             this.newProductToolStripMenuItem.Name = "newProductToolStripMenuItem";
-            this.newProductToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newProductToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.newProductToolStripMenuItem.Text = "New Product";
             this.newProductToolStripMenuItem.Click += new System.EventHandler(this.newProductToolStripMenuItem_Click_1);
             // 
             // existingProductToolStripMenuItem
             // 
             this.existingProductToolStripMenuItem.Name = "existingProductToolStripMenuItem";
-            this.existingProductToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.existingProductToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.existingProductToolStripMenuItem.Text = "Existing Product";
             // 
             // sellProductsToolStripMenuItem
@@ -138,7 +138,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Store";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

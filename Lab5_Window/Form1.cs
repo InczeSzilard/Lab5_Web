@@ -28,6 +28,9 @@ namespace Lab5_Window
 
             txtSearch.TextChanged -= txtSearch_TextChanged;
             txtSearch.TextChanged += txtSearch_TextChanged;
+
+            existingProductToolStripMenuItem.Click -= existingProductToolStripMenuItem_Click;
+            existingProductToolStripMenuItem.Click += existingProductToolStripMenuItem_Click;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -108,6 +111,12 @@ namespace Lab5_Window
 
             Product p = (Product)dataGridView1.Rows[e.RowIndex].DataBoundItem;
             SellProduct form = new SellProduct(p);
+            form.ShowDialog();
+            LoadProducts(txtSearch.Text);
+        }
+        private void existingProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddQuantity form = new AddQuantity();
             form.ShowDialog();
             LoadProducts(txtSearch.Text);
         }
